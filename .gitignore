@@ -1,0 +1,4 @@
+*.pyc
+tags
+parser.out
+parsetab.*

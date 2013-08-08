@@ -1,0 +1,8 @@
+	def function()
+		 @data['test'] = @usi.boo('test')
+	end
+
+		
+
+
+	
