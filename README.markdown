@@ -56,7 +56,7 @@ Purplescript es un lenguaje parecido a ruby escrito en Python que compila PHP.
 	{
 
 		'producto' : @input.post('producto'),
-		'activo' : @input.post('activo)
+		'activo' : @input.post('activo')
 
 	}
 
