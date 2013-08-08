@@ -1,81 +1,72 @@
 # Purplescript #
 
 
-Purplescript is small ruby like language written in Python that compiles to PHP.
+Purplescript es un lenguaje parecido a ruby escrito en Python que compila PHP.
 
 
-## Syntax ##
+## Sintaxis ##
 
 
 ### Variables  
 
 	/* PHP */
-	$test = 'Example';
+	$var1 = 'Ejemplo';
 
 
 	/* Purplescript */
-	test = 'Example'
+	var1 = 'Ejemplo'
 
 
 
-### Constants
+### Constantes
 
 	/* PHP */
-	define('TEST', 'constant');
+	define('PRUEBA', 'constante');
 
 	/* Purplescript */
-	TEST = 'constant'
+	PRUEBA = 'constante'
 
 
-### Object oriented stuff
+### Material orientado a objetos
 	
 	
 	/* PHP */
-	$this->something->another_thing = something_else;
+	$this->algo->otra_cosa = 'contenido';
 
 
 
 	/* Purplescript */
-	@something.another_thing = something_else
+	@algo.otra_cosa = 'contenido'
 
 
-###	Arrays 
+###	Matrices 
 	
 	/* PHP */
 	$store_data = array
 	(
-		'product_name' => $this->input->post('product_name'),
-		'active' => $this->input->post('active'),
+		'producto' => $this->input->post('producto'),
+		'activo' => $this->input->post('activo'),
 	);
 
-	$simple_array = array
-	(
-		'element', 'element2', 'element3'
-
-	);
+	$simple_array = array( 'elemento1', 'elemento2', 'elemento3' );
 
 
 	/* Purplescript */
 	store_data =
 	{
 
-		'product_name' : @input.post('product_name'),
-		'active' : @input.post('active)
+		'producto' : @input.post('producto'),
+		'activo' : @input.post('activo)
 
 	}
 
-	simple_array =
-	{
-
-		'element', 'element2', 'element3'
-
-	}
+	simple_array = { 'elemento', 'elemento2', 'elemento3' }
 
 
 
 
 
-### Control flows 
+### Flujos de control 
 	
 	
 	/* Purplescript */
@@ -86,12 +77,11 @@ Purplescript is small ruby like language written in Python that compiles to PHP.
 	endfor
 
 
-	if(expression)
+	if(expresión)
 
-	elseif(expression)
+	elseif(expresión)
 
 	else
-
 
 	endif
 
@@ -99,18 +89,18 @@ Purplescript is small ruby like language written in Python that compiles to PHP.
 
 
 
-### Functions 
+### Funciones 
 	
 	
 	/* PHP */
-	function Example()
+	function Ejemplo()
 	{
 		parent::Controller();
 		$this->load->model('parent');
 
 	}
 
-	function add_product()
+	function agregar_producto()
 	{
 
 		$this->data['store'] = $this->stores_model->get_store_by_id(store_id);
@@ -120,7 +110,7 @@ Purplescript is small ruby like language written in Python that compiles to PHP.
 
 
 	/* Purplescript */
-	def Example()
+	def Ejemplo()
 
 		parent::My_controller()
 		@load.model('parent')
@@ -128,7 +118,7 @@ Purplescript is small ruby like language written in Python that compiles to PHP.
 
 	end
 
-	def add_product()
+	def agregar_producto()
 
 		@data['store'] = @stores_model.get_store_by_id(store_id)
 
@@ -138,5 +128,5 @@ Purplescript is small ruby like language written in Python that compiles to PHP.
 ### CLASSES 
 	
 
-    class Example extends Controller
+    	class Ejemplo extends Controller
 	endclass
